@@ -1,0 +1,35 @@
+@host = localhost
+@athorization_code = 123
+
+###
+
+GET http://{{host}}:3000/users
+
+###
+
+GET http://{{host}}:3000/users/48
+
+###
+
+POST http://{{host}}:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "Hello",
+  "lastName": "World"
+}
+
+###
+#Delete
+DELETE http://{{host}}:3000/users/2
+
+###
+#Put
+PUT http://{{host}}:3000/users/48
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Jane",
+  "lastName": "Doe"
+}
