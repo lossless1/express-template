@@ -22,6 +22,12 @@ express-template
 
 ## Postgres db
 
+`$ npm install --save pg pg-hstore`
+
 Change Dialect to `postgres`
 
 `$ docker run -p 5432:5432 -d --name test-postgres -e POSTGRES_PASSWORD=test_password -e POSTGRES_USER=test_user -e POSTGRES_DB=test_db_name postgres`
+
+TODO
+
+add touch .sequelizerc

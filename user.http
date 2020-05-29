@@ -7,7 +7,7 @@ GET http://{{host}}:3000/users
 
 ###
 
-GET http://{{host}}:3000/users/48
+GET http://{{host}}:3000/users/1
 
 ###
 

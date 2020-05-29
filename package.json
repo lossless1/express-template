@@ -5,7 +5,11 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:dev": "nodemon --inspect ./bin/www 80",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
     "db:migrate": "sequelize-cli db:migrate",
+    "db:seed:gen": "sequelize-cli seed:generate --name user",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:seed:undo": "sequelize-cli db:seed:undo",
     "eslint": "eslint '**/*.js'",
     "eslint:fix": "eslint '**/*.js' --fix"
   },
@@ -18,6 +22,8 @@
     "jade": "~1.11.0",
     "lodash": "^4.17.15",
     "morgan": "~1.9.1",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.5",
     "sqlite3": "^4.1.1"
   },

@@ -109,3 +109,5 @@ firebaseKey.json
 .DS_Store
 
 database.sqlite
+
+.vscode
