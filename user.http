@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 #Delete
-DELETE http://{{host}}:3000/users/2
+DELETE http://{{host}}:3000/users/1
 
 ###
 #Put
